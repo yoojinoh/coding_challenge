@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data_chal"
+version = "1.1.0"
+authors = [
+  { name="Yoojin Oh", email="5yoojinoh@gmail.com" },
+]
+description = "Zeiss data scientist coding challenge"
+dynamic = ["readme"]
+requires-python = ">=3.7"
+
+[project.scripts]
+chal_run = "data_chal.cli:run"
+
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md"}
+
+[tool.setuptools]
+packages = ["data_chal"]
