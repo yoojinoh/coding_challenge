@@ -1,0 +1,10 @@
+
+### Tensorflow training configs
+tf:
+  layers_: [8,8]
+  activ: 'relu'     # 'relu'/'sgd'/'rms'
+  optimizer: 'adam'
+  epochs: 50
+  n_batch: 10
+
+  
